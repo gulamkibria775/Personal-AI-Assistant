@@ -6,7 +6,7 @@ from jarvis.memory import Memory
 from jarvis.assistant import JarvisAssistant
 
 st.set_page_config("JARVIS AI", "🤖", layout="wide")
-st.title(" Personal AI Assistant (JARVIS)")
+st.title(" Personal AI Assistant")
 
 # ---------------- Session State ----------------
 if "users" not in st.session_state:

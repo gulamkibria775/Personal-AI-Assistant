@@ -21,18 +21,18 @@ class PromptController:
             history += f"{msg['role'].upper()}: {msg['message']}\n"
 
         final_prompt = f"""
-SYSTEM:
-{system_prompt}
+        SYSTEM:
+        {system_prompt}
 
-TASK:
-{instruction}
+        TASK:
+        {instruction}
 
-CONVERSATION HISTORY:
-{history}
+        CONVERSATION HISTORY:
+        {history}
 
-USER INPUT:
-{user_input}
+        USER INPUT:
+        {user_input}
 
-ASSISTANT:
-"""
+        ASSISTANT:
+        """
         return final_prompt.strip()
